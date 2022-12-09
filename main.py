@@ -383,7 +383,9 @@ def push_pushplus(token, content=""):
         params = {
             "token": token,
             "title": '小米运动 步数修改',
-            "content": content
+            "content": content,
+            "channel":"cp",
+            "webhook":"001"
         }
 
         response = requests.get(server_url, params=params)
